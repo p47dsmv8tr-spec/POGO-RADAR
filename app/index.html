@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07090d">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="POGO RADAR">
+  <meta name="description" content="Pokémon GO raids, events and rewards tracker with a personal watchlist.">
+  <title>POGO RADAR</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" class="app">
+    <header class="topbar" id="topbar">
+      <div class="brand">
+        <span class="radar" aria-hidden="true"><span class="sweep"></span><span class="dot"></span></span>
+        <span class="brand-name">POGO <b>RADAR</b></span>
+      </div>
+      <button class="icon-btn" id="refresh-btn" aria-label="Refresh data">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></svg>
+      </button>
+    </header>
+
+    <div id="banner" class="banner" hidden></div>
+    <main id="view" class="view" tabindex="-1" aria-live="polite">
+      <div class="loading"><span class="radar big"><span class="sweep"></span><span class="dot"></span></span><p>Scanning for events…</p></div>
+    </main>
+
+    <nav class="tabbar" aria-label="Main">
+      <a href="#/home" data-tab="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a>
+      <a href="#/raids" data-tab="raids"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg><span>Raids</span></a>
+      <a href="#/events" data-tab="events"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v3M17 2v3M3.5 9h17M5 4.5h14a1.5 1.5 0 0 1 1.5 1.5v13A1.5 1.5 0 0 1 19 20.5H5A1.5 1.5 0 0 1 3.5 19V6A1.5 1.5 0 0 1 5 4.5z"/></svg><span>Events</span></a>
+      <a href="#/watchlist" data-tab="watchlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-5 0-9 4.5-10 7 1 2.5 5 7 10 7s9-4.5 10-7c-1-2.5-5-7-10-7zm0 10.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z"/></svg><span>Watchlist</span></a>
+      <a href="#/sources" data-tab="sources"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19a14 14 0 0 0-1-15M9.5 17A9 9 0 0 0 9 8M14 15.5a4 4 0 0 0 0-5M18 12h.01"/></svg><span>Sources</span></a>
+    </nav>
+
+    <div id="sheet" class="sheet" hidden>
+      <div class="sheet-backdrop" data-close></div>
+      <article class="sheet-panel" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+        <div class="sheet-grabber" data-close></div>
+        <button class="icon-btn sheet-close" data-close aria-label="Close">✕</button>
+        <div id="sheet-body"></div>
+      </article>
+    </div>
+    <div id="toasts" class="toasts" aria-live="assertive"></div>
+  </div>
+  <noscript><p style="padding:24px;color:#fff">POGO RADAR needs JavaScript enabled.</p></noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

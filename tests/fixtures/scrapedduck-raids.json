@@ -1,0 +1,134 @@
+[
+ {
+  "name": "Giratina (Origin)",
+  "tier": "5-Star Raids",
+  "canBeShiny": true,
+  "types": [
+   {
+    "name": "ghost",
+    "image": "https://leekduck.com/assets/img/types/ghost.png"
+   },
+   {
+    "name": "dragon",
+    "image": "https://leekduck.com/assets/img/types/dragon.png"
+   }
+  ],
+  "combatPower": {
+   "normal": {
+    "min": 2018,
+    "max": 2105
+   },
+   "boosted": {
+    "min": 2523,
+    "max": 2631
+   }
+  },
+  "boostedWeather": [
+   {
+    "name": "fog",
+    "image": "https://leekduck.com/assets/img/weather/foggy.png"
+   },
+   {
+    "name": "windy",
+    "image": "https://leekduck.com/assets/img/weather/windy.png"
+   }
+  ],
+  "image": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm487.fORIGIN.icon.png"
+ },
+ {
+  "name": "Mega Sableye",
+  "tier": "Mega Raids",
+  "canBeShiny": true,
+  "types": [
+   {
+    "name": "dark",
+    "image": "https://leekduck.com/assets/img/types/dark.png"
+   },
+   {
+    "name": "ghost",
+    "image": "https://leekduck.com/assets/img/types/ghost.png"
+   }
+  ],
+  "combatPower": {
+   "normal": {
+    "min": 789,
+    "max": 843
+   },
+   "boosted": {
+    "min": 986,
+    "max": 1054
+   }
+  },
+  "boostedWeather": [
+   {
+    "name": "fog",
+    "image": "https://leekduck.com/assets/img/weather/foggy.png"
+   }
+  ],
+  "image": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm302.fMEGA.icon.png"
+ },
+ {
+  "name": "Shadow Landorus (Incarnate)",
+  "tier": "5-Star Raids",
+  "canBeShiny": true,
+  "types": [
+   {
+    "name": "ground",
+    "image": "https://leekduck.com/assets/img/types/ground.png"
+   },
+   {
+    "name": "flying",
+    "image": "https://leekduck.com/assets/img/types/flying.png"
+   }
+  ],
+  "combatPower": {
+   "normal": {
+    "min": 1897,
+    "max": 2050
+   },
+   "boosted": {
+    "min": 2372,
+    "max": 2563
+   }
+  },
+  "boostedWeather": [
+   {
+    "name": "sunny",
+    "image": "https://leekduck.com/assets/img/weather/sunny.png"
+   },
+   {
+    "name": "windy",
+    "image": "https://leekduck.com/assets/img/weather/windy.png"
+   }
+  ],
+  "image": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm645.fINCARNATE.icon.png"
+ },
+ {
+  "name": "Pikachu wearing a hat and capelet",
+  "tier": "1-Star Raids",
+  "canBeShiny": true,
+  "types": [
+   {
+    "name": "electric",
+    "image": "https://leekduck.com/assets/img/types/electric.png"
+   }
+  ],
+  "combatPower": {
+   "normal": {
+    "min": 493,
+    "max": 536
+   },
+   "boosted": {
+    "min": 616,
+    "max": 670
+   }
+  },
+  "boostedWeather": [
+   {
+    "name": "rainy",
+    "image": "https://leekduck.com/assets/img/weather/rainy.png"
+   }
+  ],
+  "image": "https://cdn.leekduck.com/assets/img/pokemon_icons/pm25.fHALLOWEEN_2026.icon.png"
+ }
+]
